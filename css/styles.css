@@ -1,21 +1,12 @@
 :root {
-  background-color: var(--background-color);
-  color: var(--main-text-color);
-  font-family: var(--main-font);
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --font-size: 14px;
+  --letter-spacing: 0.03em;
 }
-
-/* колір заголовків #212121 */
-/* колір героя і адреси #FFFFFF */
-/* колір тексту #757575 */
-/* колір виділення  #2196F3 */
-/* колір лого #000000 */
-/* колір героя #2F303A; */
-
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
   background: #f5f5f5;
 }
 .list {
@@ -38,51 +29,47 @@ body {
 }
 /* header */
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
 }
 .logo-accent {
   color: #000000;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
 }
 .logo-accent:hover,
 .logo-accent:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-link {
   color: inherit;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .mail,
 .tel {
-  color: #757575;
+  color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .mail:hover,
 .mail:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .tel:hover,
 .tel:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* main */
@@ -93,7 +80,7 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -102,52 +89,45 @@ body {
 .hero-btn {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.86;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 /* section */
 .section-subtitle {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 .section-text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
 }
 /* gallery */
 .gallery-title,
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 /* team */
 .team-member {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-job {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 /* footer */
 .footer {
@@ -157,40 +137,63 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  line-height: 1.17;
+  color: var(--accent-color);
 }
 .logo-second {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
   color: #ffffff;
 }
 .logo-second:hover,
 .logo-second:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .footer-point {
   font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: #ffffff;
 }
 .footer-pointer:hover,
 .footer-pointer:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .footer-link {
   font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link:hover,
 .footer-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+/* Портфоліо */
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  background-color: #f5f4fa;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-text-color);
 }
