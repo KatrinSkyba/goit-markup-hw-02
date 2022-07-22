@@ -2,6 +2,7 @@
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --additional-color: #ffffff;
   --font-size: 14px;
   --letter-spacing: 0.03em;
 }
@@ -84,7 +85,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--additional-color);
 }
 .hero-btn {
   font-weight: 700;
@@ -94,8 +95,13 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--additional-color);
   background-color: var(--accent-color);
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* section */
 .section-subtitle {
@@ -116,6 +122,12 @@ body {
   text-align: center;
 }
 /* team */
+.team {
+  border-color: #f5f4fa;
+}
+.team-item {
+  background-color: var(--additional-color);
+}
 .team-member {
   font-weight: 500;
   font-size: 16px;
@@ -145,16 +157,20 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
-  color: #ffffff;
+  color: var(--additional-color);
 }
 .logo-second:hover,
 .logo-second:focus {
   color: var(--accent-color);
 }
+.footer-adress {
+  font-style: normal;
+}
+
 .footer-point {
   font-size: 14px;
   line-height: 1.71;
-  color: #ffffff;
+  color: var(--additional-color);
 }
 .footer-pointer:hover,
 .footer-pointer:focus {
@@ -178,11 +194,15 @@ body {
   line-height: 1.63;
   text-align: center;
   background-color: #f5f4fa;
+  cursor: pointer;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
+  color: var(--additional-color);
   background-color: var(--accent-color);
+}
+.portfolio-item {
+  background: var(--additional-color);
 }
 .portfolio-title {
   font-weight: 700;
